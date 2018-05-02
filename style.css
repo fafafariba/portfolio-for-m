@@ -230,24 +230,17 @@ a {
     color: var(--darkish-pink);
 }
 
-nav {
-    margin-left: 12.5%;
-}
-
 nav ul {
     display: flex;
-    align-content: center;
     width: 50%;
-    margin-left: 37.5%;
-    margin-right: 12.5%;
+    margin-left: 50%;
 }
 
 nav ul li {
-    flex-grow: 1;
-    padding: 0 
+    padding-right: 121px;
 }
 
-nav a {
+nav ul li a {
     opacity: 0.07;
     font-size: 36px;
     font-weight: bold;
@@ -258,12 +251,17 @@ nav a {
     text-decoration: none;
 }
 
+nav ul li:nth-child(2) {
+    padding-right: 83px;
+}
+
+
 a.selected {
     opacity: 0.8;
 }
 
 #me article {
-    margin-left: 37.5%;
+    margin-left: 43%;
 }
 
 #work ul {
@@ -290,6 +288,7 @@ a.selected {
 
 #work img {
     width: 100%;
+    margin-left: 8.5%;
 }
 
 #work p {
