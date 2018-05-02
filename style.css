@@ -159,7 +159,8 @@ table {
 /* GO! */
 
 body {
-    background: none;
+    background-color: white;
+    background-image: url(grid.png);
     font-family: 'IBM Plex Sans';
     font-weight: normal;
     font-stretch: normal;
