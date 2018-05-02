@@ -161,6 +161,7 @@ table {
 body {
     background-color: white;
     background-image: url(grid.png);
+    background-position: center;
     font-family: 'IBM Plex Sans';
     font-weight: normal;
     font-stretch: normal;
