@@ -2,6 +2,7 @@
   "name": "made-by-miad",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://madebymiad.com",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -47,7 +48,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -90,5 +93,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
