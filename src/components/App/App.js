@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navigation from '../Navigation/Navigation';
 
 class App extends Component {
   render() {
     return (
-      <section id="App">
+      <section id="app">
+        <Navigation />
         <p>Hello</p>
       </section>
     );
