@@ -1,0 +1,80 @@
+body {
+  background-color: white;
+  background-image: url('/public/grid.png');
+  background-position: center;
+  font-family: 'IBM Plex Sans';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 24px;
+  color: #051429;
+  color: var(--night-blue);
+  text-align: left;
+  line-height: normal;
+  margin: 33px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: center;
+  margin: 195px 0px 0px 12.5%;
+}
+
+header {
+  position: relative;
+}
+
+h1,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 99px;
+  line-height: 1.29;
+  letter-spacing: -0.5px;
+  margin-bottom: 169px;
+  position: relative;
+  z-index: 1;
+}
+
+.rectangle {
+  width: 687px;
+  height: 53px;
+  position: absolute;
+  background-color: #183eef;
+  top: 75px;
+  z-index: -1;
+}
+
+h3 {
+  font-size: 36px;
+  letter-spacing: -0.2px;
+  margin-bottom: 49px;
+}
+
+p {
+  opacity: 0.8;
+  text-align: justify;
+  color: #051429;
+  color: var(--night-blue);
+  line-height: 2;
+  letter-spacing: -0.1px;
+}
+
+a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e65b6c;
+  color: var(--darkish-pink);
+}
+
+ul {
+  display: flex;
+}
+
+
+
