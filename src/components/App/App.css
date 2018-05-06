@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  background-image: url(grid.png);
+  background-image: url('/public/grid.png');
   background-position: center;
   font-family: 'IBM Plex Sans';
   font-weight: normal;
