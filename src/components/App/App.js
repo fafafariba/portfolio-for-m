@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './app.css';
-import Navigation from '../navigation/Navigation';
-import Me from '../me/Me';
-import Work from '../work/Work';
-import Contact from '../contact/Contact';
+import Navigation from '../navigation/navigation';
+import Me from '../me/me';
+import Work from '../work/work';
+import Contact from '../contact/contact';
 
 class App extends Component {
   render() { 
