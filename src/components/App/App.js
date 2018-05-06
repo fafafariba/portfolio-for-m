@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
-import Navigation from '../Navigation/Navigation';
+import './app.css';
+import Navigation from '../navigation/Navigation';
+import Me from '../me/Me';
+import Work from '../work/Work';
+import Contact from '../contact/Contact';
 
 class App extends Component {
-  render() {
-    return (
+  render() { 
+    return( 
       <section id="app">
         <Navigation />
-        <p>Hello</p>
+        <Me />
+        <Work />
+        <Contact/>
       </section>
     );
   }

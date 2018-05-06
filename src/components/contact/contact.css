@@ -1,0 +1,24 @@
+#contact {
+    background: #051429;
+    margin-left: 0;
+    color: #ffffff;
+}
+
+#contact footer {
+    margin-left: 12.5%;
+}
+
+#contact div {
+    z-index: 0;
+    width: 515px;
+}
+
+#contact h1 {
+    font-size: 95px;
+    font-weight: bold;
+    ;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin: 73px 0 57px 0;
+}
