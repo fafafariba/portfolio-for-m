@@ -1,14 +1,17 @@
 import React from 'react';
-import './navigation.css';
+import './navigation.scss';
 
 export default function Navigation() {
-    return (
-        <nav>
-            <ul>
-                <li><a class="selected" href="#me">Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    );
+  return <nav>
+      <a className="selected" id="me" href="#me">
+        Me
+      </a>
+      <a href="#work" id="work">
+        Work
+      </a>
+      <a href="#contact" id="contact">
+        Contact
+      </a>
+    </nav>;
 }
+

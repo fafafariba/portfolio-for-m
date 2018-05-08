@@ -1,5 +1,7 @@
+@import 'reset';
+@import 'grid';
+
 body {
-  background-color: white;
   background-image: url('/public/grid.png');
   background-position: center;
   font-family: 'IBM Plex Sans';
@@ -11,49 +13,51 @@ body {
   color: var(--night-blue);
   text-align: left;
   line-height: normal;
-  margin: 33px;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  align-content: center;
-  margin: 195px 0px 0px 12.5%;
+#app{
+  margin: 0 33px;
 }
 
+// header styles
 header {
   position: relative;
+  height: 128px;
+  
+  div.rectangle {
+    position: absolute;
+    background-color: #183eef;
+    top: 70px;
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 95px;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: -0.5px;
+    z-index: 1;
+  }
+  
 }
 
-h1,
-h3,
 h4 {
   font-weight: bold;
 }
 
-h1 {
-  font-size: 99px;
-  line-height: 1.29;
-  letter-spacing: -0.5px;
-  margin-bottom: 169px;
-  position: relative;
-  z-index: 1;
-}
-
-.rectangle {
-  width: 687px;
-  height: 53px;
-  position: absolute;
-  background-color: #183eef;
-  top: 75px;
-  z-index: -1;
-}
+// project styles
 
 h3 {
   font-size: 36px;
+  font-weight: bold;
   letter-spacing: -0.2px;
   margin-bottom: 49px;
+}
+
+img {
+  width: 100%;
 }
 
 p {
@@ -68,13 +72,9 @@ p {
 a {
   font-size: 18px;
   font-weight: bold;
-  color: #e65b6c;
-  color: var(--darkish-pink);
+  color: #183eef;
 }
 
-ul {
-  display: flex;
-}
 
 
 

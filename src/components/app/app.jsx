@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './app.css';
+import '../../styles/app.scss';
 import Navigation from '../navigation/navigation';
 import Me from '../me/me';
 import Work from '../work/work';
@@ -7,13 +7,15 @@ import Contact from '../contact/contact';
 
 class App extends Component {
   render() { 
-    return( 
-      <section id="app">
+    return (
+      <div id="app">
+        <div className="logo"></div>
         <Navigation />
+        <div className="sidebar"></div>
         <Me />
         <Work />
-        <Contact/>
-      </section>
+        <Contact />
+      </div>
     );
   }
 }
