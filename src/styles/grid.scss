@@ -1,105 +1,119 @@
 #app {
     display: grid;
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 108px repeat(2, [row] auto) 539px;
+    grid-template-columns: repeat(8, [col] 1fr);
+    grid-template-areas:
+    "logo .    .    .    nav  nav  nav  ."
+    "sbar me   me   me   me   me   me   me"
+    "sbar work work work work work work work"
+    "cont cont cont cont cont cont cont cont"
 }
 
 .logo {
-    grid-column-start: 1;
-    grid-row-start: 1;
+    grid-area: logo;
 }
 
 nav {
-    grid-column-start: 5;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    display: grid;
-    grid-auto-columns: 1fr;
+    grid-area: nav;
     a {
-        align-self: flex-end;
         grid-column-start: 1;
     }
-    a#work {
+    a:nth-child(2) {
         grid-column-start: 2;
     }
 
-    a#contact {
+    a:nth-child(3) {
         grid-column-start: 3;
     }
 }
 
 .sidebar {
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-area: sbar;
 }
 
 section {
-    display: grid;
-    grid-column: 2 / 9;
     grid-template-columns: repeat(7, 1fr);
-    grid-row-gap: 30px;
+    align-items: flex-end;
     header {
-        grid-column: 1 / 5;
+        grid-area: head;
     }
 }
 
 
 section#me{
-    grid-row-start: 2;
-    article {
-        grid-row-start: 2;
-        grid-column-start: 4;
-        grid-column-end: 8;
+    grid-area: me;
+    grid-template-rows: 208px auto;
+    grid-template-areas:
+        "head head head head .    .   ."
+        ".    .    .    p    p    p   p";  
+
+    p {
+        grid-area: p;
+        margin: 101px 0 86px 0;
     }
 }
 
 section#work {
-    grid-row-start: 3;
+    grid-area: work;
+    grid-template-rows: 254px repeat(3, 1fr);
+    grid-template-areas: 
+    "head head head head .    .    ."
+    "p1 p1 p1 p1 p1 p1 p1"
+    "p2 p2 p2 p2 p2 p2 p2"
+    "p3 p3 p3 p3 p3 p3 p3";
+
     header {
-        // nothing
+        margin-bottom: 109px;
+        align-self: flex-end;
     }
-    article {
-        grid-column: 1 / 8;
-        grid-template-columns: repeat(7, 1fr);
+    ul {
         display: grid;
-        div{
-            grid-column-start: 1;
-            grid-column-end: 3;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+        "text text . img img img img";
+        li.text{
+            grid-area: text;
         }
-        img{
-            grid-column-start: 4;
-            grid-column-end: 8;
+
+        li.image {
+            grid-area: img;
         }
-    }
-    article#project-01 {
-        grid-row-start: 2;
-    }
-    
-    article#project-02 {
-        grid-row-start: 3;
     }
 
-    article#project-03 {
-        grid-row-start: 4;
+    #project-1 {
+        grid-area: p1;
+
+    }
+
+    #project-2 {
+        grid-area: p2;
+    }
+
+    #project-3 {
+        grid-area: p3;
     }
     
 }
 
 section#contact {
+    grid-area: cont;
     grid-template-columns: repeat(8, 1fr);
-    grid-row-start: 7;
-    grid-column: 1 /9;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". head head head .    .    . ." 
+    ". p    p    p    p    .    . ."
+    ". foot foot foot foot foot foot ."; 
     header {
-        grid-column: 2 / 5;
-        display: grid;
+        grid-area: head;
     }
+
     p {
-        grid-row-start: 2;
-        grid-column: 2 / 6;
+        grid-area: p;
     }
+
     footer {
-        grid-row-start: 3;
-        grid-column: 2 / 8;
+        grid-area: foot;
     }
 }
 

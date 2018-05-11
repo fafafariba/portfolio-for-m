@@ -9,8 +9,8 @@ export default function Work() {
                 <div className="rectangle" />
                 <h1>Previous Work</h1>
             </header>
-            <Project id="01"/>
-            <Project id="02"/>
-            <Project id="03"/>
+            <Project order={1} />
+            <Project order={2} />
+            <Project order={3} />
         </section>);
 }

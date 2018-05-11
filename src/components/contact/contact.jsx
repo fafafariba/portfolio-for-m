@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <section id="contact">
             <header>
-                <div class="rectangle"></div>
+                <div className="rectangle"></div>
                 <h1>Contact Me</h1>
             </header>
             <p>
