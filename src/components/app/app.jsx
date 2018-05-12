@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../styles/app.scss';
+import './app.scss';
 import Navigation from '../navigation/navigation';
 import Me from '../me/me';
 import Work from '../work/work';
@@ -11,7 +11,9 @@ class App extends Component {
   render() { 
     return (
       <div id="app">
-        <img src="logo.svg" className="logo" alt="logo"/>
+        <div class="logo-container">
+          <img src="logo.svg" id="logo" alt="logo"/>
+        </div>
         <Navigation />
         <div className="sidebar"></div>
         <Me />
