@@ -1,21 +1,25 @@
 section#contact {
-    padding: 50px 0;
     background: #051429;
-    color: #ffffff;
-}
+    
+    a {
+        color: #ffffff;
+    }
 
-#contact {
     div {
         z-index: 0;
     }
 
     h1 {
+        color: #ffffff;
         line-height: 1.4;
-        margin-bottom: 57px;
     }
     
     p {
-        margin-bottom: 115px;
+        color: #ffffff;
+        transform: rotate(360deg);
+        opacity: 0.8;
+        letter-spacing: -0.2px;
+        font-size: 24px;
     }
     
     footer {

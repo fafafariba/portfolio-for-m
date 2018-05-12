@@ -2,15 +2,12 @@
 @import 'grid';
 
 body {
-  background-image: url('/public/grid.png');
-  background-position: center;
   font-family: 'IBM Plex Sans';
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
   color: #051429;
-  color: var(--night-blue);
   text-align: left;
   line-height: normal;
 }
@@ -32,10 +29,9 @@ header {
     height: 50%;
     width: 100%;
   }
-  
+
   h1 {
     font-size: 95px;
-    font-weight: bold;
     line-height: 1.29;
     letter-spacing: -0.5px;
     z-index: 1;
@@ -44,35 +40,46 @@ header {
 }
 
 h4 {
-  font-weight: bold;
+  font-size: 36px;
 }
 
-// project styles
-
 h3 {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 48px;
   letter-spacing: -0.2px;
   margin-bottom: 49px;
 }
 
-img {
-  height: 505px;
-}
-
 p {
+  font-weight: normal;
   opacity: 0.8;
   text-align: justify;
   color: #051429;
-  color: var(--night-blue);
   line-height: 2;
   letter-spacing: -0.1px;
 }
 
 a {
   font-size: 18px;
-  font-weight: bold;
   color: #183eef;
+}
+
+.pixel-container {
+  position: relative;
+}
+
+.pixel {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #183eef;
+}
+
+.selected {
+  position: relative;
+  
+  .pixel {
+    display: block;
+  }
 }
 
 

@@ -1,17 +1,28 @@
 nav {
     align-self: flex-end;
-}
-nav a {
-    opacity: 0.07;
-    font-size: 36px;
-    font-weight: bold;
-    line-height: normal;
-    letter-spacing: -0.2px;
-    color: #051429;
-    color: var(--night-blue);
-    text-decoration: none;
-}
-
-nav a.selected {
-    opacity: 0.8;
+    
+    div {
+        a {
+            opacity: 0.07;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: normal;
+            letter-spacing: -0.2px;
+            color: #051429;
+            color: var(--night-blue);
+            text-decoration: none;
+        }
+    }
+    
+    .pixel {
+        display: none;
+        left: -3px;
+        top: 0px;
+    }
+    
+    .selected {
+        a { 
+            opacity: 0.8;
+        }
+    }
 }
