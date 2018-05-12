@@ -1,5 +1,5 @@
-@import 'reset';
-@import 'grid';
+@import '../reset';
+@import '../grid';
 
 body {
   font-family: 'IBM Plex Sans';
@@ -12,9 +12,14 @@ body {
   line-height: normal;
 }
 
-#app{
-  margin: 25px 33px 0 33px;
+#app {
+  margin: 0 33px;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, rgba(155, 155, 155, .2), transparent 2px);
+  background-size: 12.5%;
+  z-index: -100;
 }
+
 
 // header styles
 header {
@@ -25,7 +30,7 @@ header {
     position: absolute;
     background-color: #183eef;
     top: 70px;
-    z-index: -1;
+    z-index: 0;
     height: 50%;
     width: 100%;
   }

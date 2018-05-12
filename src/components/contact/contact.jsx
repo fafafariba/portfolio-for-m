@@ -21,7 +21,9 @@ export default function Contact() {
                     rel="noopener noreferrer" target="_blank">Dribble</a>
                 <a href="https://www.behance.net/mmiadmn2cb29" 
                     rel="noopener noreferrer" target="_blank">Behance</a>
-                <a href="#top">Top</a>
+                <a href="#top">
+                    <img src="top.svg" alt="Navigate to Top"/>
+                </a>
             </footer>
         </section>
     );

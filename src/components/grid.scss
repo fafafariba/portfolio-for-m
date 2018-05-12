@@ -1,7 +1,8 @@
 #app {
     display: grid;
-    grid-template-rows: 108px repeat(2, [row] auto) 539px;
-    grid-template-columns: repeat(8, [col] 1fr);
+    grid-template-rows: 108px repeat(2, auto) 539px;
+    grid-template-columns: repeat(8, 12.4%);
+    grid-column-gap: 1px;
     grid-template-areas:
     "logo .    .    .    nav  nav  nav  ."
     "sbar me   me   me   me   me   me   me"
@@ -9,12 +10,17 @@
     "cont cont cont cont cont cont cont cont";
 }
 
-.logo {
+.logo-container {
+    width: 12%;
     position: fixed;
     grid-area: logo;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 nav {
+    margin-top: 25px;
     grid-area: nav;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
