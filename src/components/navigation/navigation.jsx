@@ -4,22 +4,33 @@ import './navigation.scss';
 class Navigation extends Component{
   constructor(props) {
     super(props);
-    this.state = { selection:"me" };
+    this.state = this.props.currentState;
+    this.update = this.props.update;
     this.select = this.select.bind(this);
+    this.default = "me";
+  }
+
+  static getDerivedStateFromProps (nextProps, prevState) {
+    if (prevState.selection !== nextProps.currentState.selection) {
+      return nextProps.currentState;
+    } else return null;
   }
 
   select(e){
     const name = e.target.className;
-    if (name !== this.state.selection) this.setState({ selection: name });
+    this.update(name);
   }
+
   
   render() {
     
     if (this.state) {  
-      let selection = this.state.selection
-      let meClasses = `pixel-container${selection === "me" ? " selected" : ""}`;
-      let workClasses = `pixel-container${selection === "work" ? " selected" : ""}`;
-      let contactClasses = `pixel-container${selection === "contact" ? " selected" : ""}`;
+      let view = this.state.selection ? this.state.selection : this.default;
+
+
+      let meClasses = `pixel-container${view === "me" ? " selected" : ""}`;
+      let workClasses = `pixel-container${view === "work" ? " selected" : ""}`;
+      let contactClasses = `pixel-container${view === "contact" ? " selected" : ""}`;
       
       return <nav>
           <div className={meClasses}>

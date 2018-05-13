@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.scss';
 
-export default function Contact() {
+export default function Contact(props) {
     return (
         <section id="contact">
             <header>
@@ -21,7 +21,7 @@ export default function Contact() {
                     rel="noopener noreferrer" target="_blank">Dribble</a>
                 <a href="https://www.behance.net/mmiadmn2cb29" 
                     rel="noopener noreferrer" target="_blank">Behance</a>
-                <a href="#top">
+                <a href="#top" onClick={() => props.update("me")}>
                     <img src="top.svg" alt="Navigate to Top"/>
                 </a>
             </footer>
