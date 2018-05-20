@@ -5,7 +5,7 @@
     grid-column-gap: 1px;
     grid-template-areas:
     "logo .    .    .    nav  nav  nav  ."
-    "sbar me   me   me   me   me   me   me"
+    "sbar me   me   me   me   .    .    ."
     "sbar work work work work work work work"
     "cont cont cont cont cont cont cont cont";
 }
@@ -54,8 +54,8 @@ section#me{
     grid-area: me;
     grid-template-rows: 208px auto;
     grid-template-areas:
-    "head head head head .    .   ."
-    ".    .    .    p    p    p   p";  
+    "head head head head head head head"
+    "p    p    p    p    p    p    p";  
     
     p {
         grid-area: p;
